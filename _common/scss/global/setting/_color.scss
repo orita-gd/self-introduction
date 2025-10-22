@@ -1,0 +1,57 @@
+//color
+$bg-gray: #f1f1f1;
+$bg-yellow: #fefbf0;
+$blue: #c0dce8;
+$white: #fff;
+$black: #000;
+$main-black: #333;
+$text-green: #4e9d96;
+$sub-text-color01: #666;
+$sub-text-color01: #999;
+
+//accent-color
+$accent-green: #4e9d96;
+$accent-pink: #ffa8a7;
+$accent-green: #d1d193;
+
+//texture
+$noise: url(../img/noise_img01.png);
+$bg-check: url(../img/bg_check01.jpg);
+
+//gradation
+$gra-blue: linear-gradient(
+		90deg,
+		rgba(
+			$color: #fff,
+			$alpha: 0,
+		),
+		rgba(121, 194, 187, 0.2)
+	),
+	#ecf9ff;
+$gra-pink: linear-gradient(
+		90deg,
+		rgba(
+			$color: #fff,
+			$alpha: 0,
+		),
+		rgba(255, 168, 167, 0.2)
+	),
+	#fff3f3;
+$gra-yellow: linear-gradient(
+		90deg,
+		rgba(
+			$color: #fff,
+			$alpha: 0,
+		),
+		rgba(255, 205, 110, 0.2)
+	),
+	#fffaea;
+$gra-green: linear-gradient(
+		90deg,
+		rgba(
+			$color: #fff,
+			$alpha: 0,
+		),
+		rgba(196, 252, 131, 0.2)
+	),
+	#f4faf2;

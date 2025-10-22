@@ -1,0 +1,49 @@
+@use "../global/" as *;
+
+.footer {
+	pointer-events: none;
+	width: 100%;
+	position: absolute;
+	z-index: 99999;
+	// top: 734px;
+	left: 0;
+	bottom: 0;
+	padding: 32px 0 16px 0;
+	background: url(../img/noise_img01.png), $white;
+	line-height: 1.6;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: -121px;
+		left: 0;
+		width: 100%;
+		height: 121px;
+		background: url(../img/footer_bg_img01.png) repeat-x top center/1280px;
+	}
+
+	&__sns-list {
+		pointer-events: all;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: 24px;
+		font-size: 1.4rem;
+		margin-bottom: 24px;
+	}
+
+	&__btn {
+		text-decoration: underline;
+		transition: color 0.3s ease;
+		@include hover() {
+			color: $accent-pink;
+		}
+	}
+
+	&__copyright {
+		text-align: center;
+		font-size: 1.4rem;
+		text-transform: uppercase;
+	}
+}

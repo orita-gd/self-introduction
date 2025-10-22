@@ -1,0 +1,232 @@
+// hover
+
+@mixin hover {
+	@media (hover: hover) {
+		&:hover {
+			@content;
+		}
+	}
+}
+
+//////////アニメ
+
+.header {
+	opacity: 0;
+	transform: translateY(-20px);
+	transition: opacity 0.8s ease, transform 0.8s ease;
+	will-change: transform, opacity;
+	&.is-visible {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.js-fade-target {
+	will-change: transform, opacity;
+	visibility: hidden;
+	opacity: 0;
+	transform: translateY(40px) scale(0.95);
+	transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* ふわっと表示 */
+.is-fade {
+	opacity: 1;
+	transform: translateY(0) scale(1);
+	visibility: visible;
+}
+
+.js-bounce-target {
+	opacity: 0;
+	visibility: hidden;
+	transform: scale(0.8);
+	will-change: transform, opacity;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: translateZ(0);
+}
+
+.js-scale-target {
+	opacity: 0;
+	visibility: hidden;
+	transform: scale(0.2);
+	will-change: transform, opacity;
+	transition: opacity 0.8s ease, transform 0.8s ease;
+	-webkit-backface-visibility: hidden;
+}
+.is-scale {
+	opacity: 1;
+	visibility: visible;
+	transform: scale(1);
+}
+
+/* ビヨーン（バウンス風） */
+.is-bounce {
+	opacity: 1;
+	animation: bounceIn 0.8s ease forwards;
+	visibility: visible;
+}
+
+.js-here-target {
+	will-change: transform, opacity;
+	opacity: 0;
+	visibility: hidden; /* ← iOSでのチラ見え防止 */
+	transition: opacity 0.8s ease, transform 0.8s ease;
+	transition-delay: 0.1s;
+}
+
+.is-here {
+	opacity: 1;
+	visibility: visible;
+}
+
+.is-punyon {
+	animation: punyon 2.2s ease-in-out infinite;
+	display: inline-block;
+	visibility: visible;
+}
+
+@keyframes punyon {
+	0%,
+	100% {
+		transform: scale(1, 1);
+	}
+	15% {
+		transform: scale(1.2, 0.85); /* 横にふくらんで縦縮む */
+	}
+	30% {
+		transform: scale(0.9, 1.15); /* 縦に伸びて横縮む */
+	}
+	45% {
+		transform: scale(1.1, 0.95); /* バウンド反動 */
+	}
+	60% {
+		transform: scale(0.95, 1.05); /* 少し小刻みに収束 */
+	}
+	75% {
+		transform: scale(1.05, 0.98); /* ぷにょん余韻 */
+	}
+}
+
+@keyframes cursor-anime01 {
+	0%,
+	100% {
+		transform: translate(0, 0);
+	}
+	50% {
+		transform: translate(100px, -60px);
+	}
+}
+@keyframes cursor-anime01-01 {
+	0%,
+	100% {
+		transform: scale(0.8);
+	}
+	50% {
+		transform: scale(1);
+	}
+}
+
+@keyframes cursor-anime02 {
+	0%,
+	100% {
+		transform: translate(0, 0);
+	}
+
+	25% {
+		transform: translate(60px, 60px);
+	}
+	50% {
+		transform: translate(-60px, 60px);
+	}
+}
+
+@keyframes cursor-anime03 {
+	from {
+		transform: rotate(0);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes cursor-anime03-01 {
+	from {
+		transform: rotate(0);
+	}
+
+	to {
+		transform: rotate(-360deg);
+	}
+}
+
+@keyframes cursor-anime04 {
+	0%,
+	100% {
+		transform: translate(0, 0);
+	}
+
+	20% {
+		transform: translate(30px, -30px);
+	}
+	40% {
+		transform: translate(60px, 0);
+	}
+
+	60% {
+		transform: translate(90px, -30px);
+	}
+	80% {
+		transform: translate(120px, 20px);
+	}
+}
+
+@keyframes cursor-anime05 {
+	0%,
+	100% {
+		transform: translate(0, 0);
+	}
+	33% {
+		transform: translate(60px, 90px);
+	}
+	66% {
+		transform: translate(120px, 0);
+	}
+}
+
+@keyframes bounceIn {
+	0% {
+		transform: scale(0.6);
+		opacity: 0;
+	}
+
+	60% {
+		transform: scale(1.05);
+		opacity: 1;
+	}
+	80% {
+		transform: scale(0.95);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes rotate-anime {
+	// 0%,
+	// 100% {
+	// 	transform: rotate(0);
+	// }
+	// 10% {
+	// 	transform: rotate(30deg);
+	// }
+	// 90% {
+	// 	transform: rotate(400deg);
+	// }
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

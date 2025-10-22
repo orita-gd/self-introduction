@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="検索結果でサイト名の下に表示される「サイトの説明文」" />
+
+		<link rel="apple-touch-icon" sizes="180x180" href="_common/img/favicon.svg" />
+		<link rel="icon" type="image/svg" href="_common/img/favicon.svg" />
+
+		<!-- fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@100;300;400;500;700&family=Zen+Kaku+Gothic+New:wght@200;300;400;500;700;900&display=swap" rel="stylesheet" />
+
+		<!-- 以下OGP -->
+		<meta property="og:description" content="SNSでシェアされたときに表示するサイトの説明文" />
+		<meta property="og:title" content="ORITA HIMENO プロフィールサイト" />
+		<meta property="og:image" content="SNSでシェアされたときに表示する画像※かならず絶対パスを記載（相対パス不可）https://....../img/icons/logo.png" />
+		<meta property="og:image:width" content="1200px" />
+		<meta property="og:image:height" content="630px" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://himmme.com/" />
+		<!-- OGP終わり -->
+		<title>ORITA HIMENO | 自己紹介サイト</title>
+		<link rel="stylesheet" href="_common/css/styles.css" />
+	</head>
+	<body>
+		<header class="header js-header-target">
+			<div class="header__text-wrapper">
+				<!-- JS管理 -->
+				<ul class="header__text-box"></ul>
+				<ul class="header__text-box"></ul>
+			</div>
+		</header>
+
+		<main class="main_content">
+			<section class="mv">
+				<div class="c-inner mv__container">
+					<div class="mv__text-box js-fade-target">
+						<p class="mv__text-box--attr">グラフィックデザイン学科 アシスタント</p>
+						<h1 class="mv__text-box--name">
+							<p class="jp">織田 姫乃</p>
+							<p class="en">ORITA HIMENO</p>
+						</h1>
+
+						<nav class="mv__menu">
+							<p class="mv__menu--title">AGENDA</p>
+							<ol class="mv__menu-list">
+								<li class="mv__menu-list--item">
+									<a href="#" class="btn">
+										<p class="num">01</p>
+										<div class="text_box">
+											<p class="en">About me</p>
+											<div class="jp">
+												<p class="main">わたしについて</p>
+												<p class="sub">わたしについて</p>
+											</div>
+										</div>
+										<span class="arrow"></span>
+									</a>
+								</li>
+								<li class="mv__menu-list--item">
+									<a href="#" class="btn">
+										<p class="num">02</p>
+										<div class="text_box">
+											<p class="en">my favorite thing</p>
+											<div class="jp">
+												<p class="main">すきなこと・もの</p>
+												<p class="sub">すきなこと・もの</p>
+											</div>
+										</div>
+										<span class="arrow"></span>
+									</a>
+								</li>
+								<li class="mv__menu-list--item">
+									<a href="#" class="btn">
+										<p class="num">03</p>
+										<div class="text_box">
+											<p class="en">My dream</p>
+											<div class="jp">
+												<p class="main">してみたいこと</p>
+												<p class="sub">してみたいこと</p>
+											</div>
+										</div>
+										<span class="arrow"></span>
+									</a>
+								</li>
+								<li class="mv__menu-list--item">
+									<a href="#" class="btn">
+										<p class="num">04</p>
+										<div class="text_box">
+											<p class="en">Secret</p>
+											<div class="jp">
+												<p class="main">？？？</p>
+												<p class="sub">？？？</p>
+											</div>
+										</div>
+										<span class="arrow"></span>
+									</a>
+								</li>
+							</ol>
+						</nav>
+					</div>
+					<div class="mv__img-box js-bounce-target">
+						<picture class="picture">
+							<source media="(max-width: 767px)" srcset="/_common/img/mv_img01_sp.jpg" />
+							<img src="/_common/img/mv_img01.jpg" width="480" height="643" alt="私の写真" />
+						</picture>
+					</div>
+					<ul class="mv__back-text"></ul>
+				</div>
+			</section>
+
+			<article class="box-content">
+				<section class="about">
+					<div class="bg-box">
+						<span class="bg-blob01 js-fade-target"></span>
+						<span class="bg-blob02 js-fade-target"></span>
+						<span class="bg-blob03 js-fade-target"></span>
+						<span class="bg-blob04 js-fade-target"></span>
+					</div>
+					<div class="c-inner">
+						<h2 class="c-heading js-bounce-target">
+							<span class="kirakira"></span>
+							<p class="num">01</p>
+							<p class="jp">わたしについて</p>
+							<p class="en">ABOUT ME</p>
+						</h2>
+
+						<div class="about__container">
+							<div class="about__img js-bounce-target">
+								<span class="about__img--deco">
+									<picture class="picture">
+										<source media="(max-width: 1024px)" srcset="/_common/img/about_img01_sp.jpg" />
+										<img src="/_common/img/about_img01.jpg" width="280" height="410" alt="私の顔写真" />
+									</picture>
+								</span>
+							</div>
+
+							<div class="about__text-box">
+								<ul class="about__attr-list js-fade-target">
+									<li class="about__attr-list--item">
+										<p class="title">なまえ</p>
+										<p class="content">織田 姫乃</p>
+									</li>
+									<li class="about__attr-list--item">
+										<p class="title">誕生日</p>
+										<p class="content">2002.8.3</p>
+									</li>
+									<li class="about__attr-list--item">
+										<p class="title">出身地</p>
+										<p class="content">兵庫県加古川市</p>
+									</li>
+									<li class="about__attr-list--item">
+										<p class="title">MBTI</p>
+										<p class="content">INFJ<span class="small">（提唱者）</span></p>
+									</li>
+								</ul>
+
+								<div class="about__box-wrapper">
+									<div class="c-about-container about__life js-bounce-target">
+										<h3 class="c-about-box-title">人生のあゆみ</h3>
+										<div class="c-about-box about__life-box">
+											<!-- JS管理 -->
+											<ul class="about__life-text-container" id="js-timelineContainer"></ul>
+										</div>
+									</div>
+
+									<div class="c-about-container about__ingredient js-bounce-target">
+										<h3 class="c-about-box-title">成分表</h3>
+										<div class="c-about-box about__ingredient-box">
+											<!-- <img src="/_common/img/about_ingredient_img01.png" alt="成分表" /> -->
+											<div class="graph-container" id="js-graphContainer">
+												<svg fill="none" height="230" viewBox="0 0 230 230" width="230" xmlns="http://www.w3.org/2000/svg">
+													<path class="draw-segment seg1" d="M115 1C103.037 1 91.1492 2.88289 79.7721 6.57956L103.727 80.3055C107.368 79.1225 111.172 78.52 115 78.52L115 1Z" fill="#AC9ED6" stroke="black" />
+													<path class="draw-segment seg2" d="M79.7721 6.57956C56.8759 14.019 36.9227 28.5158 22.7721 47.9924L85.4871 93.5576C90.0153 87.3251 96.4003 82.6861 103.727 80.3055L79.7721 6.57956Z" fill="#B7D4D3" stroke="black" />
+													<path class="draw-segment seg3" d="M6.56131 150.172C1.01084 133.059 -0.410738 114.876 2.41279 97.1081C5.23632 79.3407 12.2248 62.4937 22.8068 47.9447L85.4982 93.5423C82.1119 98.198 79.8756 103.589 78.9721 109.275C78.0686 114.96 78.5235 120.779 80.2996 126.255L6.56131 150.172Z" fill="#D6F991" stroke="black" />
+													<path class="draw-segment seg4" d="M115 229C90.9256 229 67.4691 221.379 47.9925 207.228C28.5158 193.077 14.019 173.124 6.57955 150.228L80.3055 126.273C82.6861 133.6 87.3251 139.985 93.5576 144.513C99.7901 149.041 107.296 151.48 115 151.48L115 229Z" fill="#FFCD6E" stroke="black" />
+													<path
+														class="draw-segment seg5"
+														d="M115 1C145.235 1 174.231 13.0107 195.61 34.3898C216.989 55.769 229 84.7653 229 115C229 145.235 216.989 174.231 195.61 195.61C174.231 216.989 145.235 229 115 229L115 151.48C124.675 151.48 133.954 147.637 140.795 140.795C147.637 133.954 151.48 124.675 151.48 115C151.48 105.325 147.637 96.0461 140.795 89.2047C133.954 82.3634 124.675 78.52 115 78.52L115 1Z"
+														fill="#FFA8A7"
+														stroke="black" />
+												</svg>
+												<div class="graph-overlay"></div>
+											</div>
+										</div>
+									</div>
+
+									<div class="c-about-container about__how js-bounce-target">
+										<h3 class="c-about-box-title">わたしってこんな人!!</h3>
+										<!-- JS管理 -->
+										<ul class="c-about-box about__how-box">
+											<!-- <li class="about__how-question-box">
+													<p class="about__how-question-box--title">行動は？</p>
+													<p class="about__how-question-box--text about_left">勢い派</p>
+													<div class="about__how-question-box--list">
+														<p class="one"></p>
+														<p class="two"></p>
+														<p class="three"></p>
+														<p class="four this"></p>
+														<p class="five"></p>
+													</div>
+													<p class="about__how-question-box--text about_right">慎重派</p>
+												</li> -->
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="favorite">
+					<div class="bg-box">
+						<span class="bg-blob01 js-fade-target"></span>
+						<span class="bg-blob02 js-fade-target"></span>
+					</div>
+					<div class="c-inner favorite__wrapper">
+						<div class="bg-box">
+							<span class="guruguru01"></span>
+						</div>
+						<div class="favorite__text-container js-bounce-target">
+							<h2 class="c-heading c-box">
+								<p class="num">02</p>
+								<div class="text_box">
+									<p class="jp">すきなこと・もの</p>
+									<p class="en">my favorite things</p>
+								</div>
+							</h2>
+							<p class="is-sp">ボタンを押すと詳細がでるよ！</p>
+							<div class="favorite__btn-container" id="favoriteBtnContainer">
+								<!-- JSでボタン生成 -->
+								<!-- <button class="favorite__btn"><span class="favorite__btn--hashtag blue">＃</span>ぬいぐるみ</button>
+								<button class="favorite__btn"><span class="favorite__btn--hashtag pink">＃</span>味</button>
+								<button class="favorite__btn"><span class="favorite__btn--hashtag blue">＃</span>ぬいぐるみ</button>
+								<button class="favorite__btn"><span class="favorite__btn--hashtag pink">＃</span>味</button>
+								<button class="favorite__btn"><span class="favorite__btn--hashtag blue">＃</span>ぬいぐるみ</button>
+								<button class="favorite__btn"><span class="favorite__btn--hashtag pink">＃</span>味</button>
+								<button class="favorite__btn"><span class="favorite__btn--hashtag blue">＃</span>ぬいぐるみ</button>
+								<button class="favorite__btn"><span class="favorite__btn--hashtag pink">＃</span>味</button> -->
+							</div>
+						</div>
+						<div class="favorite__contents-wrapper js-bounce-target">
+							<div class="favorite__contents-container" id="favoriteContents">
+								<!-- JSでコンテンツ生成 -->
+								<!-- <div class="favorite__contents--img">
+									<img src="/_common/img/favorite_nuigurumi_img01.jpg" alt="ウパーのぬいぐるみ" />
+								</div>
+								<h3 class="favorite__contents--title">ぬいぐるみあつめ</h3>
+								<p class="favorite__contents--content">
+									ちいさいころからぬいぐるみが大好きで、家に溢れかえっています。<br />
+									一人暮らしをはじめる時も、ぬいぐるみを持っていくかもっていかないかで１ヶ月ぐらい荷物の整理に時間がかかりました。<br />
+									特に好きなのが推しポケモンのウパーやパモさんのぬいぐるみ、ちいかわのうさぎのぬいぐるみたちです。<br />
+									もちろん大阪の家に持ってきました。<br />
+									小旅行に連れて行ったり、作業を見守ったりしてくれています。相棒です。
+								</p>
+								<ul class="favorite__contents--img-list">
+									<li class="favorite__contents--img-item">
+										<img src="/_common/img/favorite_nuigrumi_img-list01.jpg" alt="ちいかわのうさぎ" />
+									</li>
+									<li class="favorite__contents--img-item">
+										<img src="/_common/img/favorite_nuigrumi_img-list02.jpg" alt="ポケモンのヌメラとトリトドン" />
+									</li>
+									<li class="favorite__contents--img-item">
+										<img src="/_common/img/favorite_nuigrumi_img-list03.jpg" alt="ポケモンのウパー" />
+									</li>
+									<li class="favorite__contents--img-item">
+										<img src="/_common/img/favorite_nuigrumi_img-list04.jpg" alt="ピンクのうさぎのぬいぐるみとポケモンのパモ" />
+									</li>
+								</ul> -->
+							</div>
+						</div>
+						<!-- SP用モーダル -->
+						<div class="favorite__modal" id="favoriteModal">
+							<div class="favorite__modal-inner">
+								<div class="favorite__modal-content" id="favoriteModalContent"></div>
+							</div>
+							<button class="favorite__modal-close" id="favoriteModalClose"></button>
+						</div>
+					</div>
+				</section>
+
+				<section class="dream">
+					<div class="c-inner">
+						<div class="dream__container">
+							<div class="c-heading c-box js-fade-target">
+								<p class="num">03</p>
+								<div class="text_box">
+									<p class="jp">してみたいこと</p>
+									<p class="en">my dream</p>
+								</div>
+							</div>
+
+							<ul class="dream__accordion-container js-fade-target" id="accordionContainer">
+								<!-- <li class="dream__accordion-box">
+									<div class="dream__accordion-item">
+										<button class="dream__accordion-item--question">いつか挑戦してみたいことは？</button>
+										<div class="dream__accordion-item--answer">
+											<div class="anser-inner">
+												<p class="title">富士山に登って頂上でカップラーメンを食べる！</p>
+												<p class="content">
+													YouTubeで
+													<a href="https://www.youtube.com/watch?v=8G3B3eS6lk0" class="c-link" target="_blank">山の頂上でカップラーメンを食べている動画</a>
+													を見たことがあって、それが本当に美味しそうで自分もやってみたい！と思うようになりました。 頂上の空気や登山の達成感ですごく美味しいだろうな〜と思います。
+												</p>
+											</div>
+										</div>
+									</div>
+								</li> -->
+							</ul>
+						</div>
+					</div>
+				</section>
+			</article>
+
+			<section class="quiz">
+				<div class="bg-box">
+					<span class="cursor01 js-scale-target">
+						<img src="_common/img/parts/cursor01.svg" alt="← ORITASAN" width="101" height="38" />
+					</span>
+					<span class="cursor02 js-scale-target">
+						<img src="_common/img/parts/cursor02.svg" alt="← ORIHIME" width="89" height="38" />
+					</span>
+					<span class="cursor03 js-bounce-target">
+						<img src="_common/img/parts/cursor03.svg" alt="← HIME" width="64" height="38" />
+					</span>
+					<span class="cursor04 js-bounce-target">
+						<img src="_common/img/parts/cursor04.svg" alt="← HIMEKO" width="83" height="38" />
+					</span>
+					<span class="cursor05 js-bounce-target">
+						<img src="_common/img/parts/cursor05.svg" alt="← HIMESEN" width="92" height="38" />
+					</span>
+					<span class="graphic_parts01 js-bounce-target">
+						<img src="_common/img/parts/graphic-parts01.svg" alt="" width="279" height="183" />
+					</span>
+					<a href="#" class="graphic_parts02 js-bounce-target">
+						<img src="_common/img/parts/graphic-parts02.svg" alt="" width="170" height="167" />
+					</a>
+				</div>
+				<div class="c-inner">
+					<h2 class="c-heading js-bounce-target">
+						<span class="kirakira"></span>
+						<p class="num">04</p>
+						<p class="jp">理解度クイズ</p>
+						<p class="en">understand me?</p>
+					</h2>
+					<p class="quiz__intro js-bounce-target">
+						このサイトに書いてあることで<br class="is-sp" />クイズを作成しました！<br />
+						全問正解できたら『おりたひめのマスター』です。
+					</p>
+
+					<div class="c-quiz js-bounce-target">
+						<!-- 問題カード -->
+						<div class="c-quiz__card" id="js-quiz-card">
+							<div class="c-quiz__container">
+								<div class="c-quiz__title">
+									<p class="c-quiz__title--head">question.</p>
+									<p class="c-quiz__title--num" id="js-quiz-number">1</p>
+								</div>
+
+								<div class="c-quiz__progress" id="js-quiz-progress">
+									<span class="c-quiz__progress-current" id="js-quiz-progress-current">0</span>
+									<span class="c-quiz__progress-separator"></span>
+									<span class="c-quiz__progress-total" id="js-quiz-progress-total">5</span>
+								</div>
+							</div>
+							<div class="c-quiz__question" id="js-quiz-question">読み込み中...</div>
+							<ul class="c-quiz__choices" id="js-quiz-choices" aria-live="polite"></ul>
+						</div>
+
+						<!-- モーダル（解説） -->
+						<div class="c-quiz__modal" id="js-quiz-modal" aria-hidden="true" role="dialog" aria-modal="true">
+							<div class="c-quiz__modal-inner" role="document">
+								<div class="c-quiz__result">解説</div>
+								<div class="c-quiz__explain" id="js-quiz-modal-explain">
+									<p class="c-quiz__explain-correct" id="js-quiz-explain-correct"></p>
+									<p class="c-quiz__explain-explanation" id="js-quiz-explain-explanation"></p>
+								</div>
+								<div style="margin-top: 12px">
+									<button class="c-quiz__btn" id="js-quiz-next">次の問題へ</button>
+								</div>
+							</div>
+						</div>
+
+						<!-- 結果画面 -->
+						<div class="c-quiz__card c-quiz__final" id="js-quiz-final" style="display: none">
+							<div class="c-quiz__score" id="js-quiz-final-score"></div>
+							<div class="c-quiz__msg" id="js-quiz-final-msg"></div>
+							<button class="c-quiz__btn" id="js-quiz-restart">もう一度挑戦する</button>
+						</div>
+
+						<!-- 判定オーバーレイ -->
+						<div class="c-quiz__judge" id="js-quiz-judge"></div>
+					</div>
+				</div>
+
+				<footer class="footer">
+					<div class="c-inner">
+						<ul class="footer__sns-list">
+							<li class="footer__sns-list_item">
+								<a href="https://works.do/GXMJSGv" class="footer__btn" target="_blank">LINE WORKS</a>
+							</li>
+							<li class="footer__sns-list_item">
+								<a href="https://www.instagram.com/ori_hime0803?igsh=N2JxOG4wc2Y0MTUx&utm_source=qr" class="footer__btn" target="_blank">Instagram</a>
+							</li>
+							<li class="footer__sns-list_item">
+								<a href="https://x.com/nnnnnnn_him?s=21" class="footer__btn" target="_blank">X</a>
+							</li>
+						</ul>
+						<p class="footer__copyright">© 2025 orita himeno</p>
+					</div>
+				</footer>
+			</section>
+		</main>
+
+		<svg width="0" height="0" viewBox="0 0 354 284">
+			<clipPath id="mask" clipPathUnits="objectBoundingBox" style="transform: scale(calc(1 / 354), calc(1 / 284))">
+				<path
+					d="M195.521 5.63133C228.943 8.51767 246.773 2.72407 266.544 4.1642C286.175 5.84564 307.987 14.9002 325.787 32.5781C343.587 50.256 357.476 76.9379 353.23 99.9058C349.224 123.013 326.805 142.889 304.161 174.863C281.377 207.078 257.989 251.493 217.832 271.424C177.536 291.597 120.333 287.529 75.9565 259.011C31.6825 230.874 -0.144879 178.391 0.000495979 127.957C0.387296 77.662 32.264 29.1386 72.9684 10.4884C113.292 -8.05983 162.202 3.12573 195.521 5.63133Z"
+					fill="#333333"
+					stroke="#333333" />
+			</clipPath>
+		</svg>
+
+		<script src="_common/js/loop.js"></script>
+		<script src="_common/js/timeline.js"></script>
+		<script src="_common/js/aboutMe.js"></script>
+		<script src="_common/js/aboutSvg.js"></script>
+		<script src="_common/js/favoriteTab.js"></script>
+		<script src="_common/js/dreamAccordion.js"></script>
+		<script src="_common/js/quiz.js"></script>
+		<script src="_common/js/smoothScroll.js"></script>
+		<script src="_common/js/scrollAnime.js"></script>
+	</body>
+</html>

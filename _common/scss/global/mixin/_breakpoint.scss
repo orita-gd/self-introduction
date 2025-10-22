@@ -1,0 +1,52 @@
+$breakpoints: (
+	"sp": (
+		max-width: 767px,
+	),
+	"tb": (
+		max-width: 1024px,
+	),
+	"pc": (
+		max-width: 1240px,
+	),
+) !default;
+
+@mixin mq($breakpoint) {
+	@if map-has-key($breakpoints, $breakpoint) {
+		@media screen and #{inspect(map-get($breakpoints, $breakpoint))} {
+			@content;
+		}
+	}
+
+	// マップ型で定義されていない値が呼び出された時はエラーを返す
+	@else {
+		@error "指定されたブレークポイントは定義されていません。" + "指定できるブレークポイントは次のとおりです。 -> #{map-keys($breakpoints)}";
+	}
+}
+
+// 基準幅を設定（デザインカンプの幅）
+$base-width: 1280;
+
+// px を vw に変換する関数
+@mixin vw($property, $px) {
+	#{$property}: calc($px / $base-width * 100vw);
+}
+
+// フォントサイズ
+@mixin fluid-font($min, $max) {
+	font-size: clamp(#{$min}px, #{$min / 375 * 100}vw, #{$max}px);
+}
+
+// 使いやすい mixin
+@mixin fluid-size($property, $px, $base: $base-width) {
+	#{$property}: vw($px, $base);
+}
+
+// 横幅・高さ
+@mixin fluid-box($w, $h) {
+	width: calc($w / $base-width * 100vw);
+	height: calc($h / $base-width * 100vw);
+}
+
+@mixin fluid-clamp($property, $min, $max) {
+	#{$property}: clamp(#{$min}px, calc(#{$min}px + (#{$max} - #{$min}) * ((100vw - 375px) / (1440 - 375))), #{$max}px);
+}
