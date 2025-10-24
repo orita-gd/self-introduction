@@ -56,6 +56,31 @@ const questionData = [
 		answers: ["俊足", "頭脳"],
 		selectedIndex: 4,
 	},
+	{
+		title: "友達と盛り上がる話は？",
+		answers: ["恋愛話", "怪談話"],
+		selectedIndex: 0,
+	},
+	{
+		title: "優先するなら？",
+		answers: ["食欲", "睡眠欲"],
+		selectedIndex: 4,
+	},
+	{
+		title: "行けるなら？",
+		answers: ["過去", "未来"],
+		selectedIndex: 1,
+	},
+	{
+		title: "髪型を変えるなら？",
+		answers: ["アフロ", "坊主"],
+		selectedIndex: 4,
+	},
+	{
+		title: "好きなのはどっち？",
+		answers: ["匂い", "筋肉"],
+		selectedIndex: 0,
+	},
 ];
 
 // 一覧を作成（前回と同じ）

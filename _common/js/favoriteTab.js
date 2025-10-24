@@ -196,6 +196,151 @@ const favoriteData = [
 		mainImg: "/_common/img/favorite/favorite-cafe-img01.jpg",
 		imgList: ["/_common/img/favorite/favorite-cafe-img-list01.jpg", "/_common/img/favorite/favorite-cafe-img-list02.jpg", "/_common/img/favorite/favorite-cafe-img-list03.jpg", "/_common/img/favorite/favorite-cafe-img-list04.jpg"],
 	},
+	{
+		label: "お菓子",
+		hashtagColor: "pink",
+		title: "ポテチ",
+		text: `
+		お菓子の中で一番好きなのは「ポテチ」です！！<br />
+		意外〜と言われることが多いのですが、ポテチを食べている時が一番幸せです。<br /><br />
+		よく食べるわけじゃないのですが、のり塩とブラックペッパーが大好きです。<br /><br />
+		海外のポテチも大好きで、日本と違って、じゃがいもの本来の旨みが際立つ感じとバリバリした食感が病みつきになります。<br /><br />
+		特に、Laysのサワークリーム＆オニオンが美味しすぎて、一袋に結構な量が入っているのですが、1日でなくなってしまいます。<br /><br />
+		映画とかみながら食べてたら本当に一瞬でなくなってしまいます…<br /><br />
+		日本のポテチも種類たくさんありますが、やっぱり海外のポテチはなんとも言えない体に悪い感じが染みるなぁ〜と思っていつも食べています。
+		`,
+		mainImg: "/_common/img/favorite/favorite-snack-img01.jpg",
+		imgList: [],
+	},
+	{
+		label: "YouTube",
+		hashtagColor: "green",
+		title: "ゲーム実況",
+		text: `
+		ほぼ毎日YouTubeでゲーム実況をみます！<br />
+		特に好きなのが、「牛沢」です。<br />
+		実況するゲームや声、ワードチョイスなど、何もかも好きです。<br />
+		たまに実写動画を上げてくれるのですが、ビジュアルも大好きです。色白で眼鏡で細身で、センターパートが似合う感じが全て好きです。<br />
+		あんなに尖ったワードセンスなのに、小さい動物が好きで、めっちゃ優しくなるところも大好きです。<br />
+		あんなに口が悪いのに怖いのが無理なところも可愛くて好きです。<br />
+		全てが好きなので、毎日声を摂取して癒されています...！<br /><br />
+		牛沢の他には同じくTOP4のキヨやレトルト、ガッチマンを見たり、Vtuberさんの配信もごくたまに見ます。Vはゲーム実況よりかは企画ものをよく見るかもしれません！<br /><br />
+		小説など、文字を読むのが苦手なので、実況として上手に呼んでくれるのが助かります...
+		`,
+		mainImg: "/_common/img/favorite/favorite-top4-img01.jpg",
+		imgList: ["/_common/img/favorite/favorite-top4-img-list01.jpg", "/_common/img/favorite/favorite-top4-img-list02.jpg", "/_common/img/favorite/favorite-top4-img-list03.jpg", "/_common/img/favorite/favorite-top4-img-list04.jpg"],
+	},
+	{
+		label: "映画",
+		hashtagColor: "orange",
+		title: "映画鑑賞",
+		text: `
+		あらゆる動画サブスクに入っているので、よく映画を観ます！<br /><br />
+		特にSF映画が好きでよく見るのですが、クリストファー・ノーラン監督の「インターステラー」が今まで観てきた映画の中でも一番感動しました。映画自体は3時間あるはずなのですが、マジであっという間です。<br />
+		この間、１０周年記念でIMAX再上映があったので、観てきたのですが、もう最高でした...！！何が最高って、映像はもちろん、音が最高でしたね...<br />
+		無音のところはまるで時が止まったように静かで、激しい音は、振動が伝わってくるぐらいの臨場感で、本当に体験の映画だったな〜としみじみ思います。<br /><br />
+		アニメ映画も好きで、鬼滅の無限城の3DCGは圧巻でした...迷子にならない場面転換でとっても観やすかったです！<br /><br />
+		最近みたなかでおもしろかったなーって思うのは<br /><br />
+		・かがみの孤城<br />
+		・オデッセイ<br />
+		・ブルージャイアント<br />
+		・ソロモンの偽証<br />
+		・イミテーション・ゲーム<br /><br />
+		です！アマプラとかNetflixとかで観れるので、ぜひ観てみてください！<br />
+		おすすめの映画あれば教えてください！
+		`,
+		mainImg: "/_common/img/favorite/favorite-movie-img01.jpg",
+		imgList: [],
+	},
+	{
+		label: "写真",
+		hashtagColor: "pink",
+		title: "ミラーレス",
+		text: `
+		高校3年生の時に買った、CanonのミラーレスEOSkiss mの白色を愛用しています。当時5万円ぐらいで買ったつもりなのですが、今値段上がっててびっくりしています...<br /><br />
+		写真趣味にしたいな〜と思いつつ買ったのですが、今のIphoneの性能とかポートレートモードが優秀なので、持ち運ぶ手間や、編集の手間などを考えてしまうと億劫になってしまいます...<br /><br />
+		誰か一緒に紅葉とか、桜とか撮りにいきませんか...。
+		`,
+		mainImg: "/_common/img/favorite/favorite-camera-img01.jpg",
+		imgList: ["/_common/img/favorite/favorite-camera-img-list01.jpg", "/_common/img/favorite/favorite-camera-img-list02.jpg"],
+	},
+	{
+		label: "季節",
+		hashtagColor: "orange",
+		title: "春",
+		text: `
+		四季の中で一番好きなのは春です！<br />
+		秋も好きなのですが、アレルギー体質で花粉やらなんやらで肌も荒れるし鼻水ズビズビになります。<br /><br />
+		春の好きなところは、涼しい風に温かい日差し、まるで時間がゆっくり過ぎていきそうな穏やかな気候なところです。あとは、お花が好きなので、空を見ても地面を見ても、カラフルな世界が広がっています。<br />
+		特に、淡い小さな花が多いので、すごく繊細で淡いふんわりした世界に囲まれているような気分になります。<br /><br />
+		春のお昼時にお昼寝するのがすごく好きです！
+		`,
+		mainImg: "/_common/img/favorite/favorite-season-img01.jpg",
+		imgList: ["/_common/img/favorite/favorite-season-img-list01.jpg", "/_common/img/favorite/favorite-season-img-list02.jpg", "/_common/img/favorite/favorite-season-img-list03.jpg", "/_common/img/favorite/favorite-season-img-list04.jpg"],
+	},
+	{
+		label: "香り",
+		hashtagColor: "blue",
+		title: "香水",
+		text: `
+		最近、香水にハマっています！<br />
+		身につけるというよりかは香水の瓶ってすごくクオリティが高くて、キラキラしているのでコレクションするのにハマっています。<br /><br />
+		もちろん香りも好きなものを買っているのですが、最近自分が好きな香りの統計が取れてきました。<br /><br />
+		おそらく甘いムスク系・甘い柑橘系が苦手で、ゼラニウム・フローラル系などの爽やかな香りが好きです。<br /><br />
+		今まで入手してきた中で一番香りが好みだったのが、JILLSTUARTのクリスタルブルーム スノーでした。<br />
+		甘過ぎず可憐な女の子の匂いがします。好き過ぎて持ち運ぶ用の小さいサイズも買ってしまいました。<br /><br />
+		逆に一番苦手だったのが、DIORのブルーミング ブーケでした。どフローラル系なのですが、ムスクみが強い気がします。期間限定のSAKURAは好き過ぎてもう無くなりそうです。<br /><br />
+		最近は、NILEのセロトニンという香りの香水をよくつけています。幸せホルモンの香りなんて名前の香水見つけた時にはすぐ買っちゃいましたね...<br />
+		こちらは結構甘い系なのですが、お安めの香水なのでバシャバシャ使えるじゃんと思って普段使いとしてつけています。<br /><br />
+		皆さんはどんな香りが好きですか？
+		`,
+		mainImg: "/_common/img/favorite/favorite-perfume-img01.jpg",
+		imgList: [],
+	},
+	{
+		label: "食べ物",
+		hashtagColor: "pink",
+		title: "ベシャメルソース",
+		text: `
+		人には様々な好きなものがあると思いますが、私にとってベシャメルソースは、特別な時に食べたいランキングナンバーワンといった感じです！<br /><br />
+		例えば自分の誕生日とか、仕事頑張ったご褒美とか...そんな時にシチューとかグラタンとか、ホワイトソース系の食べ物を食べたいな〜と思います！<br /><br />
+		濃厚なのであまり量は食べられないのですが、チーズたっぷりのグラタンや、お野菜たっぷりのクリームシチュー、ジャンキーでたまらないマカロニ&チーズなど、疲れた時こそ、ベシャメルソース系の食べ物が食べたくなります！
+		`,
+		mainImg: "/_common/img/favorite/favorite-food-img01.jpg",
+		imgList: ["/_common/img/favorite/favorite-food-img-list01.jpg", "/_common/img/favorite/favorite-food-img-list02.jpg"],
+	},
+	{
+		label: "飲み物",
+		hashtagColor: "green",
+		title: "ミルクティー",
+		text: `
+		普段あまりお茶かじ水しか買わないようにしているのですが、リラックスしたい時や、作業に集中できない時などはミルクティーを飲みます。<br />
+		特に、Gong chaの黒糖烏龍ミルクティーが大好物です。<br />
+		多分甘すぎるものは好きじゃないのですが、どこか香ばしさを感じる飲み物が好きなんでしょうね。<br /><br />
+		お茶で言うと普通のお茶なら爽健美茶か玄米茶、ティーだったらジャスミンティーが好きです。<br /><br />
+		夏にジャスミンティーを飲むと体温が下がる気が本当にするので、ごくごく飲んでいます。<br /><br />
+		健康に良さそうなドリンクも好きで、スムージーや豆乳、プロテインなどもよく飲みます。
+		`,
+		mainImg: "/_common/img/favorite/favorite-drink-img01.jpg",
+		imgList: [],
+	},
+	{
+		label: "アーティスト",
+		hashtagColor: "pink",
+		title: "大好きなアーティスト達",
+		text: `
+		高校生の時には軽音部に入るくらいには、音楽が好きです！兄がいる影響で、兄妹一緒に音楽フェスとかに連れて行ってもらっていました！<br />
+		人生で一番最初に好きになった邦ロックはおそらくRADWIMPSのDADAです。当時PSPの中に入っていたMVをずっと見ていた記憶があります。そこからUVERworldを好きになり、BUMP OF CHICKENを好きに、米津さんも好きになり...という遍歴です。<br />
+		最近では、めっぽうヨルシカが好きです。<br />
+		どのくらい好きかと言うと、リリースされている曲は全部歌えるぐらいです。n-bunaさんが作った曲や、ボーカルのsuisさんが歌っているものまで追いかけていました。<br />
+		あとは、シンガーソングライターのりりあ。さんの曲をよく聞くようになりました！（別に失恋はしていません）<br />
+		最近好きかも...みたいなアーティストはharhaです。すごくヨルシカに似ているのですが、もう少し尖っている感じがあります。「人生オーバー」という曲を聴いてからハマりました！ぜひ聴いてみてください。<br /><br />
+		また、おすすめの曲とかあったら教えてください！<br />
+		（最近、クリープハイプとVaundyの曲聴いてます！）
+		`,
+		mainImg: "/_common/img/favorite/favorite-artist-img01.jpg",
+		imgList: [],
+	},
 ];
 
 const NO_IMAGE = "/_common/img/no_image.svg";
