@@ -23,13 +23,27 @@ function smoothScrollTo(targetY, duration = 500) {
 }
 
 // ナビゲーションのクリックイベント
-document.querySelectorAll("nav a").forEach((link) => {
+document.querySelectorAll("a").forEach((link) => {
 	link.addEventListener("click", function (e) {
+		const href = this.getAttribute("href");
+
+		// 外部リンクなどは除外（例：http, mailto）
+		if (href.startsWith("http") || href.startsWith("mailto")) return;
+
 		e.preventDefault();
-		const targetId = this.getAttribute("href").substring(1);
+
+		// #のみならページ最上部へ
+		if (href === "#" || href === "") {
+			smoothScrollTo(0, 700);
+			return;
+		}
+
+		// #id へのスクロール
+		const targetId = href.substring(1);
 		const targetElement = document.getElementById(targetId);
 		if (targetElement) {
-			const headerOffset = document.querySelector("header").offsetHeight;
+			const header = document.querySelector("header");
+			const headerOffset = header ? header.offsetHeight : 0;
 			const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerOffset;
 			smoothScrollTo(targetPosition, 700);
 		}
